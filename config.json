@@ -1,0 +1,209 @@
+{
+    "dataset_sets": [
+        {
+            "set_name": "FSD50K,dev",
+            "input_csv": "/Users/junwoobeck/Desktop/FSD50K/FSD50K.ground_truth/dev.csv",
+            "audio_dir": "/Users/junwoobeck/Desktop/FSD50K/FSD50K.dev_audio",
+            "output_classified_csv": "FSD50K.dev_UCS_classified.csv",
+            "output_unclassified_csv": "FSD50K.dev_UCS_unclassified.csv",
+            "output_unclassified_summary": "FSD50K.dev_unclassified_summary.csv"
+        },
+        {
+            "set_name": "FSD50K.eval",
+            "input_csv": "/Users/junwoobeck/Desktop/FSD50K/FSD50K.ground_truth/eval.csv",
+            "audio_dir": "/Users/junwoobeck/Desktop/FSD50K/FSD50K.eval_audio",
+            "output_classified_csv": "FSD50K.eval_UCS_classified.csv",
+            "output_unclassified_csv": "FSD50K.eval_UCS_unclassified.csv",
+            "output_unclassified_summary": "FSD50K.eval_unclassified_summary.csv"
+        }
+    ],
+    "audio_paths": {
+        "audio_extension": ".wav"
+    },
+    "ucs_paths": {
+        "structure_csv": "/Users/junwoobeck/Documents/Work Folder/Python_Work/Georgia_Tech/7100/UCS_Convert/UCS v8.2.1 Full List.csv"
+    },
+    "column_names": {
+        "fsd50k_tags_column": "labels",
+        "fsd50k_fname_column": "fname",
+        "ucs_category_column": "Category",
+        "ucs_subcategory_column": "SubCategory",
+        "ucs_keywords_column": "Keywords",
+        "output_columns": {
+            "filename": "filename",
+            "category": "Category",
+            "subcategory": "SubCategory",
+            "tags": "Keywords"
+        }
+    },
+    "defaults": {
+        "default_category": "MISCELLANEOUS"
+    },
+    "log_level": "INFO",
+    "manual_mapping": {
+        "Gunshot_and_gunfire": {
+            "Category": "WEAPONS",
+            "SubCategory": "GUNSHOT"
+        },
+        "Walk": {
+            "Category": "FOOTSTEPS",
+            "SubCategory": null
+        },
+        "Skateboard": {
+            "Category": "SPORTS",
+            "SubCategory": "SKATE"
+        },
+        "Speech": {
+            "Category": "VOICES",
+            "SubCategory": null
+        },
+        "Run": {
+            "Category": "FOOTSTEPS",
+            "SubCategory": null
+        },
+        "Explosion": {
+            "Category": "EXPLOSIONS",
+            "SubCategory": null
+        },
+        "Squeak": {
+            "Category": "FOLEY",
+            "SubCategory": "SQUEAK"
+        },
+        "Car": {
+            "Category": "VEHICLES",
+            "SubCategory": "CAR"
+        },
+        "Water": {
+            "Category": "WATER",
+            "SubCategory": null
+        },
+        "Wind": {
+            "Category": "WIND",
+            "SubCategory": "null"
+        },
+        "Music": {
+            "Category": "MUSIC",
+            "SubCategory": null
+        },
+        "Shout": {
+            "Category": "VOICES",
+            "SubCategory": null
+        },
+        "Footsteps": {
+            "Category": "FOOTSTEPS",
+            "SubCategory": null
+        },
+        "Gun": {
+            "Category": "WEAPONS",
+            "SubCategory": "GUNSHOT"
+        },
+        "Vehicle": {
+            "Category": "VEHICLES",
+            "SubCategory": null
+        },
+        "Thunder": {
+            "Category": "WEATHER",
+            "SubCategory": "THUNDER"
+        },
+        "Rain": {
+            "Category": "RAIN",
+            "SubCategory": null
+        },
+        "Bird": {
+            "Category": "BIRDS",
+            "SubCategory": null
+        },
+        "Dog": {
+            "Category": "ANIMALS",
+            "SubCategory": "DOG"
+        },
+        "Cat": {
+            "Category": "ANIMALS",
+            "SubCategory": "CAT DOMESTIC"
+        },
+        "Door": {
+            "Category": "DOORS",
+            "SubCategory": null
+        },
+        "Glass": {
+            "Category": "GLASS",
+            "SubCategory": null
+        },
+        "Metal": {
+            "Category": "METAL",
+            "SubCategory": null
+        },
+        "Wood": {
+            "Category": "WOOD",
+            "SubCategory": null
+        },
+        "Domestic_sounds_and_home_sounds": {
+            "Category": "FOLEY",
+            "SubCategory": null
+        },
+        "Human_voice": {
+            "Category": "VOICES",
+            "SubCategory": null
+        },
+        "Liquid": {
+            "Category": "LIQUID & MUD",
+            "SubCategory": null
+        },
+        "Fart": {
+            "Category": "FARTS",
+            "SubCategory": null
+        },
+        "Respiratory_sounds": {
+            "Category": "HUMAN",
+            "SubCategory": null
+        },
+        "Breathing": {
+            "Category": "HUMAN",
+            "SubCategory": null
+        },
+        "Engine": {
+            "Category": "MOTORS",
+            "SubCategory": null
+        },
+        "Walk_and_footsteps": {
+            "Category": "FOOTSTEPS",
+            "SubCategory": null
+        },
+        "Whoosh_and_swoosh_and_swish": {
+            "Category": "SWOOSHES",
+            "SubCategory": null
+        },
+        "Water_tap_and_faucet": {
+            "Category": "WATER",
+            "SubCategory": null
+        },
+        "Screaming": {
+            "Category": "VOICES",
+            "SubCategory": null
+        },
+        "Burping_and_eructation": {
+            "Category": "VOICES",
+            "SubCategory": null
+        },
+        "Coin_(dropping)": {
+            "Category": "FOLEY",
+            "SubCategory": null
+        },
+        "Zipper_(clothing)": {
+            "Category": "FOLEY",
+            "SubCategory": null
+            },
+        "Cutlery_and_silverware": {
+            "Category": "FOLEY",
+            "SubCategory": null
+        },
+        "Dishes_and_pots_and_pans": {
+            "Category": "FOLEY",
+            "SubCategory": null
+        },
+        "Crumpling_and_crinkling": {
+            "Category": "FOLEY",
+            "SubCategory": null
+        }
+    }
+}
