@@ -8,9 +8,19 @@ pip install -r requirements.txt
 
 ---Classification Logic---
 
-1. Manual Mapping: Custom rules defined in config.json handle ambiguous tags (e.g., mapping "Domestic_sounds" -> "FOLEY"). 
-2. Category Auto-Match: Direct string matching against UCS Category names.
-3. SubCategory Auto-Match: Direct string matching against UCS SubCategory names.
+1. Manual Mapping Priority:
+
+    - Checks if any tag matches a rule defined in config.json.
+
+    - If matched, assigns the designated Category/SubCategory immediately.
+
+2. Automated Selection Logic (for files not manually mapped):
+
+    - Rule 1 (Specificity): Prioritizes matches to specific SubCategories over broad Categories.
+
+    - Rule 2 (Frequency): Selects the Category that appears most frequently among the candidate matches.
+
+    - Rule 3 (Position): If frequencies are tied, select the category associated with the rightmost tag in the original list.
 
 ---Configuration---
 
@@ -52,7 +62,7 @@ Defines custom rules to override auto-matching. This is the primary way to impro
 
 ---Run Conversion---
 
-Generates _classified.csv, _unclassified.csv, and _unclassified_summary.csv for each set defined in config.json.
+Generates _classified.csv, _unclassified.csv, _classified_ambiguity_review.csv, and _unclassified_summary.csv for each set defined in config.json.
 
 python UCS_Convert.py
 
